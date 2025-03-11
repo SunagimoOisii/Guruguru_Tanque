@@ -1,1 +1,0 @@
-# Guruguru_Tanque
