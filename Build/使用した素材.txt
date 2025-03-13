@@ -1,0 +1,14 @@
+・(素材名, 出典)
+
+・フォント
+　・PixelMplus12, itouhiroはてなブログ, https://itouhiro.hatenablog.com/entry/20130602/font
+
+・サウンド
+　・BGM
+　　・Springin_News_おたよりコーナー, Springin, https://www.springin.org/sound-stock/category/bgm/page/2/
+　　・Shooting_03, Springin, https://www.springin.org/sound-stock/category/bgm/page/2/
+　　・Jingle_24, Springin, https://www.springin.org/sound-stock/category/bgm-short/
+　・SE
+　　・決定2, Springin, https://www.springin.org/sound-stock/category/system/
+　　・大砲2, Springin, https://www.springin.org/sound-stock/category/battle/page/4/
+　　・爆発1, Springin, https://www.springin.org/sound-stock/category/battle/page/4/ 
