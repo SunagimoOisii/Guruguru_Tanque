@@ -16,7 +16,7 @@ public:
 		Dead
 	};
 
-//ƒZƒbƒ^[ƒQƒbƒ^[
+//Æ’ZÆ’bÆ’^Â[Æ’QÆ’bÆ’^Â[
 
 	bool GetVisible() const { return m_visible; }
 	void SetVisible(bool visible) { m_visible = visible; }
@@ -27,20 +27,15 @@ public:
 	State GetState() const { return m_state; }
 	void SetState(State state) { m_state = state; }
 
-//ŠÖ”
+//Å Ã–Ââ€
 
 	void Update(float deltaTime);
-	void UpdateComponents(float deltaTime);
 	virtual void UpdateActor(float deltaTime);
-
-	void AddComponent(class Component* component);
-	void RemoveComponent(class Component* component);
 
 	virtual void Draw() = 0;
 
 protected:
 	class Game* m_game;
-	std::vector<class Component*> m_components;
 
 	bool  m_visible;
 	float m_transSpeed;
