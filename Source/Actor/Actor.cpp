@@ -25,42 +25,9 @@ void Actor::Update(float deltaTime)
 {
 	if (m_state != Active) return;
 
-	UpdateComponents(deltaTime);
 	UpdateActor(deltaTime);
-}
-
-void Actor::UpdateComponents(float deltaTime)
-{
-	for (auto comp : m_components)
-	{
-		comp->Update(deltaTime);
-	}
 }
 
 void Actor::UpdateActor(float deltaTime)
 {
-}
-
-void Actor::AddComponent(Component* component)
-{
-	int myOrder = component->GetUpdateOrder();
-	auto i = m_components.begin();
-	for (;i != m_components.end();++i)
-	{
-		if (myOrder < (*i)->GetUpdateOrder())
-		{
-			break;
-		}
-	}
-
-	m_components.insert(i, component);
-}
-
-void Actor::RemoveComponent(Component* component)
-{
-	auto i = std::find(m_components.begin(), m_components.end(), component);
-	if (i != m_components.end())
-	{
-		m_components.erase(i);
-	}
 }
