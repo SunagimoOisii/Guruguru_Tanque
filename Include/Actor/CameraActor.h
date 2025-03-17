@@ -21,11 +21,11 @@ private:
 
 	Actor3D* m_target;
 
-	//ƒJƒƒ‰(FPV)
+	//ã‚«ãƒ¡ãƒ©(FPV)
 	bool	 m_fpvCamera;
 	XMFLOAT3 m_fpvOffset;
 	float	 m_fpvMaxTilt;
-	//ƒJƒƒ‰(TPV)
+	//ã‚«ãƒ¡ãƒ©(TPV)
 	float m_tpvBackOffset;
 	float m_tpvUpOffset;
 	float m_tpvFrontOffset;
