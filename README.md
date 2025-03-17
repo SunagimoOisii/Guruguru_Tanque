@@ -59,15 +59,15 @@ Source/
 
 ## 各工夫点に関するプログラムの位置
 - **Actorクラスの導入**
-・Actorクラス：
-　　Include or Source → Actor → Actor.h,cpp
-・Actorを継承したクラス：
-　　Include or Source → ActorフォルダのActor.h,cpp以外のファイル
+  - Actorクラス：
+    - Include or Source → Actor → Actor.h,cpp
+  - Actorを継承したクラス：
+    - Include or Source → ActorフォルダのActor.h,cpp以外のファイル
 - **シーンクラスの導入**
-・SceneActorクラス：
-　　Include or Source → Actor → SceneActor → SceneActor.h,cpp
-・SceneActorを継承したシーンクラス：
-　　Include or Source → Actor → SceneActorフォルダのSceneActor以外のファイル
+  - SceneActorクラス：
+    - Include or Source → Actor → SceneActor → SceneActor.h,cpp
+  - SceneActorを継承したシーンクラス：
+    - Include or Source → Actor → SceneActorフォルダのSceneActor以外のファイル
 - **映像再生機能の疑似的な実装**
   - SpriteSequenceActorクラス：
     - Include or Source → Actor → SpriteSequenceActor.h,cpp
