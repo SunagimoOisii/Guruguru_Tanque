@@ -3,7 +3,7 @@
 #include "Mesh.h"
 
 /// <summary>
-/// FbFixƒtƒ@ƒCƒ‹‚ğˆµ‚¤
+/// FbFixãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ‰±ã†
 /// </summary>
 class FileMesh : public Mesh
 {
