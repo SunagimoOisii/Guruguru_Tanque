@@ -16,7 +16,7 @@ public:
 		Dead
 	};
 
-//ƒZƒbƒ^[ƒQƒbƒ^[
+//セッターゲッター
 
 	bool GetVisible() const { return m_visible; }
 	void SetVisible(bool visible) { m_visible = visible; }
@@ -27,7 +27,7 @@ public:
 	State GetState() const { return m_state; }
 	void SetState(State state) { m_state = state; }
 
-//ŠÖ”
+//関数
 
 	void Update(float deltaTime);
 	virtual void UpdateActor(float deltaTime);
