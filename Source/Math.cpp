@@ -2,7 +2,7 @@
 #include <cmath>
 
 /**********************************
-XMFLOAT2ââéZéq
+XMFLOAT2ÊºîÁÆóÂ≠ê
 **********************************/
 
 XMFLOAT2 operator+(const XMFLOAT2& a, const XMFLOAT2& b) 
@@ -44,7 +44,7 @@ void operator*=(XMFLOAT2& a, float b)
 }
 
 /**********************************
-XMFLOAT3ââéZéq
+XMFLOAT3ÊºîÁÆóÂ≠ê
 **********************************/
 
 XMFLOAT3 operator+(const XMFLOAT3& a, const XMFLOAT3& b)
@@ -123,7 +123,7 @@ void operator*=(XMFLOAT3& a, float b)
 }
 
 /**********************************
-XMFLOAT2ånä÷êî
+XMFLOAT2Á≥ªÈñ¢Êï∞
 **********************************/
 
 XMFLOAT2 UnitVecAngle(float theta) 
@@ -161,7 +161,7 @@ float Cross(const XMFLOAT2& a, const XMFLOAT2& b)
 }
 
 /**********************************
-XMFLOAT3ånä÷êî
+XMFLOAT3Á≥ªÈñ¢Êï∞
 **********************************/
 
 float Length(const XMFLOAT3& a)
