@@ -3,7 +3,7 @@
 #include "BoxActor.h"
 
 /// <summary>
-/// ђЪђG‰В”\‚И‹@”\‚рЋќ‚В
+/// жЋҐи§¦еЏЇиѓЅгЃЄж©џиѓЅг‚’жЊЃгЃ¤
 /// </summary>
 class ContactableActor : public BoxActor
 {
