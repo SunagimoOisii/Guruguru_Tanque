@@ -7,6 +7,12 @@
 実際のゲームの画面や詳細な工夫点は以下のリンクからご確認いただけます。
 [🔗 GuruguruTanque ゲーム詳細（Notionページ）](https://picturesque-kayak-ac4.notion.site/1a6281634a168042800afab058862bde?pvs=4)
 
+## 目次
+- [使用技術](#使用技術)
+- [リポジトリ構成](#リポジトリ構成)
+- [工夫点](#工夫点)
+- [各工夫点に関するプログラムの位置](#各工夫点に関するプログラムの位置)
+
 ## 使用技術
 - DirectX12
 - DirectXTex
@@ -50,3 +56,30 @@ Source/
   - 自機の3Dモデルは元々FBXファイル。しかし、FBXには開発に不要なデータもある
   - そこで①：必要データのみ持つFBFIXの設計、②：FBXからFBFIXへ変換するコンバータの開発、③：FBFIXに対応したクラスの開発　を行った
   - ③は具体的に１：FBFIXのメッシュを保持するクラス*(`FileMesh`)、２：*を保持するActor継承クラス(`FileMeshActor`)を実装した
+
+## 各工夫点に関するプログラムの位置
+- **Actorクラスの導入**
+・Actorクラス：
+　　Include or Source → Actor → Actor.h,cpp
+・Actorを継承したクラス：
+　　Include or Source → ActorフォルダのActor.h,cpp以外のファイル
+- **シーンクラスの導入**
+・SceneActorクラス：
+　　Include or Source → Actor → SceneActor → SceneActor.h,cpp
+・SceneActorを継承したシーンクラス：
+　　Include or Source → Actor → SceneActorフォルダのSceneActor以外のファイル
+- **映像再生機能の疑似的な実装**
+  - SpriteSequenceActorクラス：
+    - Include or Source → Actor → SpriteSequenceActor.h,cpp
+  - SpriteSequenceActorを用いて疑似的な映像を再現するプログラム：
+　  - Source → Actor → SceneActor → TitleSceneActor.cpp 36-63行目
+    - Source → Actor → SceneActor → ResultSceneActor.cpp 37-82行目
+- **独自3DデータフォーマットFBFIXの採用**
+  - Meshクラス：
+    - Include or Source → Mesh → Mesh.h,cpp
+  - MeshActorクラス：
+    - Include or Source → Actor → MeshActor → MeshActor.h,cpp
+  - FileMeshクラス：
+    - Include or Source → Mesh → FileMesh.h,cpp
+  - FileMeshActorクラス：
+    - Include or Source → Actor → MeshActor → FileMeshActor.h,cpp
