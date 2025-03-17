@@ -71,7 +71,7 @@ Source/
 - **映像再生機能の疑似的な実装**
   - SpriteSequenceActorクラス：
     - Include or Source → Actor → SpriteSequenceActor.h,cpp
-  - SpriteSequenceActorを用いて疑似的な映像を再現するプログラム：
+  - SpriteSequenceActorを用いて疑似的な映像を再現するプログラム：<br>
 　  - Source → Actor → SceneActor → TitleSceneActor.cpp 36-63行目
     - Source → Actor → SceneActor → ResultSceneActor.cpp 37-82行目
 - **独自3DデータフォーマットFBFIXの採用**
