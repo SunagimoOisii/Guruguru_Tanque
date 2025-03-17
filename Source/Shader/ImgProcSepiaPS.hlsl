@@ -5,7 +5,7 @@ SamplerState	  smp : register(s0);
 
 float4 ImgProcSepiaPS(VS_OUTPUT input) : SV_TARGET
 {
-    //セピア変換行列
+    //繧ｻ繝斐い螟画鋤陦悟��
     static matrix<float, 3, 3> sepia =
     {
         { 0.393, 0.769, 0.189 },
